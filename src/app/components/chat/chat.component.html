@@ -1,0 +1,7 @@
+<div class="sidenav">
+<div *ngFor="let message of messages | async">
+  {{message.username}}: {{message.message}}
+</div>
+<input [(ngModel)]="message" (keyup)="$event.keyCode == 13 && sendMessage()"/>
+<button (click)="sendMessage()">Send</button>
+</div>

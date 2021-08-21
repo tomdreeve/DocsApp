@@ -1,0 +1,44 @@
+.sidenav {
+    position: fixed;
+    height: 100%;
+    width: 25%;
+    top: 0;
+    right: 0;
+    background-color: #111111;
+    overflow-x: hidden;
+    padding-top: 20px;
+
+    div {
+        padding: 6px 8px 6px 16px;
+        text-decoration: none;
+        font-size: 25px;
+        font-family: 'Roboto', Tahoma, Geneva, Verdana, sans-serif;
+        color: white;
+        display: block;
+    }
+
+    input {
+    position: fixed;
+    border: 0;
+    padding: 0.5rem;
+    width: 65%;
+    outline: 0;
+    border-radius: 0.25rem;
+    background: #ccc;
+    bottom: 31px;
+    }
+
+    button {
+        position: fixed;
+        width: 6rem;
+        background-color: green;
+        color: white;
+        border: none;
+        padding: 0.5rem;
+        cursor: pointer;
+        border-radius: 0.25rem;
+        text-transform: uppercase;
+        width: 25%;
+        bottom: 0px;
+    }
+}

@@ -1,0 +1,17 @@
+<div class="doc">
+<div class="navbar">
+<button *ngIf="isDark" id='lightMode' name='Light' value="Toggle Light Mode" (click)="darkFun()">Light Mode</button>
+<button *ngIf="!isDark" id="darkMode" name="Dark" value="Toggle Dark Mode" (click)="darkFun()">Dark Mode</button>
+<span>
+<label for="select">Change Font: </label>
+<select placeholder="Font" id="select" [(ngModel)]="selectedFont" (change)="changeFont()">
+    <option value="Times New Roman" selected ="selected">Times</option>
+    <option value="Arial">Arial </option>option>
+    <option value="Roboto">Roboto </option>
+    <option value="Georgia">Georgia</option>
+    <option value="Garamond">Garamond</option>
+</select>
+</span>
+</div>
+<textarea [(ngModel)]='document.doc' id = "output-text" (keyup)='editDoc()' placeholder='Start typing...'></textarea>
+</div>
